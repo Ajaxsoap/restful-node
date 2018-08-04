@@ -29,9 +29,9 @@ var server = http.createServer(function(req,res){
       'load' : buffer
     }
 
-    var selecthandler = typeof(router[pathTrimmed]) !== 'undefined' ? router[pathTrimmed] : handlers.notFound;
+    var selectHandler = typeof(router[pathTrimmed]) !== 'undefined' ? router[pathTrimmed] : handlers.notFound;
 
-    selecthandler(data,function(statusCode,load) {
+    selectHandler(data,function(statusCode,load) {
       statusCode = typeof(statusCode) == 'number' ? statusCode : 200;
 
       load = typeof(load) == 'object' ? load : {};
