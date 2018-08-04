@@ -54,19 +54,23 @@ var handlers = {};
 
 handlers.hello = function(data, callback){
   callback(200,{
-    'breakfast': {
-      'name' : 'Pancake',
-      'drinks' : 'Brewed Coffee'
-    },
-    'lunch' : {
-      'name': 'Rice',
-      'viand': 'Ampalaya',
-      'drinks': 'Pineapple juice'
-    },
-    'dinner': {
-      'name': 'Soup',
-      'appetizer' : 'sisig',
-      'drinks' : 'red horse'
+    'Welcome to my diner' : {
+      'We offer the following meals': {
+        'breakfast': {
+          'name' : 'Pancake',
+          'drinks' : 'Brewed Coffee'
+        },
+        'lunch' : {
+          'name': 'Rice',
+          'viand': 'Ampalaya',
+          'drinks': 'Pineapple juice'
+        },
+        'dinner': {
+          'name': 'Soup',
+          'appetizer' : 'sisig',
+          'drinks' : 'red horse'
+        }
+      }
     }
   })
 };
